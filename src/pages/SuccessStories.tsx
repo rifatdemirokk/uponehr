@@ -15,9 +15,9 @@ type SuccessStory = {
   industry: string;
   employees_count: number;
   order_index: number;
-};
+ };
 // Sahte veri (mock data)
-const mockStories = [
+const mockStories: SuccessStory[] = [
   {
     id: "1",
     company_name: "Grand Hotel Istanbul",
