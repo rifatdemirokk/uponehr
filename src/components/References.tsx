@@ -4,46 +4,12 @@ export default function References() {
   const { t } = useLanguage();
 
   const references = [
-    { name: 'Bosch', logo: '🏭' },
-    { name: 'Mercedes-Benz', logo: '🚗' },
-    { name: 'Siemens', logo: '⚡' },
-    { name: 'Turkcell', logo: '📱' },
-    { name: 'Garanti BBVA', logo: '🏦' },
-    { name: 'Eczacıbaşı', logo: '🏢' },
-    { name: 'Koç Holding', logo: '🏭' },
-    { name: 'Sabancı Holding', logo: '🏢' },
-    { name: 'Anadolu Efes', logo: '🍺' },
-    { name: 'Turkish Airlines', logo: '✈️' },
-    { name: 'BİM', logo: '🛒' },
-    { name: 'Migros', logo: '🛍️' },
-    { name: 'LC Waikiki', logo: '👕' },
-    { name: 'Arçelik', logo: '🔌' },
-    { name: 'Vestel', logo: '📺' },
-    { name: 'Zorlu Holding', logo: '🏢' },
-    { name: 'Doğuş Holding', logo: '🏭' },
-    { name: 'Enerjisa', logo: '⚡' },
-    { name: 'Yıldız Holding', logo: '🍫' },
-    { name: 'Ülker', logo: '🍪' },
-    { name: 'Akbank', logo: '🏦' },
-    { name: 'Yapı Kredi', logo: '💳' },
-    { name: 'İş Bankası', logo: '🏦' },
-    { name: 'Vakıfbank', logo: '🏦' },
-    { name: 'Halkbank', logo: '🏦' },
-    { name: 'Ziraat Bankası', logo: '🌾' },
-    { name: 'Şişecam', logo: '🪟' },
-    { name: 'Turk Telekom', logo: '📞' },
-    { name: 'Vodafone', logo: '📱' },
-    { name: 'Coca-Cola', logo: '🥤' },
-    { name: 'Unilever', logo: '🧴' },
-    { name: 'P&G', logo: '🧼' },
-    { name: 'Nestlé', logo: '☕' },
-    { name: 'Danone', logo: '🥛' },
-    { name: 'Ford Otosan', logo: '🚙' },
-    { name: 'Oyak Renault', logo: '🚗' },
-    { name: 'Tofaş', logo: '🚘' },
-    { name: 'Kibar Holding', logo: '⚙️' },
-    { name: 'Tekfen', logo: '🏗️' },
-    { name: 'Çalık Holding', logo: '🏢' },
+    { name: 'Küçük Nakliyat', logo:  <img src="/logo.png" alt="logo" /> },
+        { name: '4man Dev', logo:  <img src="/logo.png" alt="logo" />},
+            { name: 'Mthan', logo:  <img src="/logo.png" alt="logo" /> }
+
+
+
   ];
 
   return (

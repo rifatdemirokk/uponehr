@@ -1,5 +1,6 @@
 import { Mail, MapPin, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+//import logo from '../../public/logo.png'
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -20,7 +21,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-1">
-            <div className="text-2xl font-bold mb-4">UpOne</div>
+            <img src="/logo.png" alt="Logo" className='w-32 h-auto mb-4' />
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               {t('footer_about')}
             </p>

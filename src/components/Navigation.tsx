@@ -48,7 +48,7 @@ export default function Navigation() {
                 isScrolled || !isHomePage ? 'text-gray-900' : 'text-white'
               }`}
             >
-              UpOne
+              <img src="/logo.png" alt="Logo" className="w-20 h-auto mb-4"/>
             </Link>
           </div>
 

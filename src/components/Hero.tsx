@@ -1,4 +1,4 @@
-import { MessageCircle, Play } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Hero() {
@@ -42,16 +42,13 @@ export default function Hero() {
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto lg:mx-0">
-              {[
+              {[ 
                 { icon: '✓', text: t('trust_1') },
                 { icon: '✓', text: t('trust_2') },
                 { icon: '✓', text: t('trust_3') },
                 { icon: '✓', text: t('trust_4') },
               ].map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-2 text-white/90 text-sm"
-                >
+                <div key={index} className="flex items-center gap-2 text-white/90 text-sm">
                   <span className="text-green-400 font-bold text-xl">{item.icon}</span>
                   <span>{item.text}</span>
                 </div>
@@ -61,13 +58,15 @@ export default function Hero() {
 
           <div className="relative">
             <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
-              <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl shadow-inner flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <Play size={32} className="text-white ml-1" />
-                  </div>
-                  <div className="text-gray-600 font-medium">Dashboard Preview</div>
-                </div>
+              <div className="aspect-video rounded-xl overflow-hidden shadow-inner">
+                <video
+                  src="/demo.mp4" // ✅ public/demo.mp4 konumunda olmalı
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <div className="mt-4 space-y-2">
